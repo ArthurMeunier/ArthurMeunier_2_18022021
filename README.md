@@ -15,5 +15,11 @@ Projet n°2 du parcours "Développeur Web" d'Openclassrooms : **"Transformez une
     - le bleu : #0065FC 
     - le bleu plus clair : #DEEBFF
     - le gris pour le fond : #F2F2F2
+- La police du site est Raleway
+
+- Ne pas utiliser de framework ou de pré-compilateur CSS
+- Le code doit utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
+- Le site devra être compatible avec les dernières versions de Chrome et Firefox.
+- Le code doit être versionné avec git
 ![Mockup Reservia Desktop](./img/mockup/mockup_desktop.png)
 ![Mockup Reservia iPhone](./img/mockup/mockup_iphone.png)
