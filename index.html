@@ -1,137 +1,133 @@
 <!DOCTYPE html>
 <html lang='fr'>
 <!--<Head-->
-	<head>
-		<meta charset="utf-8">
-		<title>Reservia</title>
-		<link rel="stylesheet" href="style/style.css">
-        <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');</style>
-        <link rel="icon" type="image/svg" href="img/logo/reservia.svg">
-    </head>
+<head>
+	<meta charset="utf-8">
+	<title>Reservia</title>
+	<link rel="stylesheet" href="style/style.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');</style>
+  <link rel="icon" type="image/svg" href="img/logo/reservia.svg">
+  </head>
 <!--Head>-->
 <!--<Body-->
-	<body>
+<body>
 <!--<Header-->
-        <header class="header">
-            <img class="headerLogo" src="img/logo/reservia.svg" alt="Reservia">
-        	<nav class="nav">
-            	<ul>
-               	 	<li><a href="#" class="navLink">Hébergements</a></li>
-                	<li><a href="#" class="navLink">Activités</a></li>
-                	<li><a href="#" class="navLink">S'inscrire</a></li>
-            	</ul>
-       		 </nav>
-        </header>
+  <header class="header">
+    <img class="header-logo" src="img/logo/reservia.svg" alt="Reservia">
+    <nav class="nav">
+      <ul>
+        <li><a href="#" class="nav-link">Hébergements</a></li>
+        <li><a href="#" class="nav-link">Activités</a></li>
+        <li><a href="#" class="nav-link">S'inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
 <!--Header>-->
 <!--<Main-->
-	<main class="main">
+  <main class="main">
 <!--<Search section-->
-            <section class="search">
-                <h1 class="searchTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="searchSubTitle">En plein centre ville ou en pleine nature</p>
-                <div class ="searchform">
-                    <form method="post" action="traitement.php">
-                    <input class="searchFormInput" type="search" placeholder="Marseille, France">
-                    <input class="searchButton" type="submit" value="Rechercher" />
-                    </form>
-                </div>
-            </section>
+    <section class="search">
+      <h1 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p class="search-subtitle">En plein centre ville ou en pleine nature</p>
+      <div class ="search-form">
+        <form method="post" action="traitement.php">
+          <input class="search-form-input" type="search" placeholder="Marseille, France">
+          <input class="search-button" type="submit" value="Rechercher" />
+        </form>
+      </div>
+    </section>
 <!--Search section>-->
 <!--<Filters section-->
-            <section class="filters">
-                <h2 class="filtersTitle">Filtres</h2>
-                <div class="filtersList">
-                    <div class="filterOption">Économique</div>
-                    <div class="filterOption">Familial</div>
-                    <div class="filterOption">Romantique</div>
-                    <div class="filterOption">Animaux autorisés</div>
-                </div>
-            </section>
-            <p class="filtersResultsText">Plus de 500 logements sont disponibles dans cette ville</p> 
+    <section class="filters">
+      <h2 class="filters-title">Filtres</h2>
+      <div class="filters-list">
+        <div class="filter-option">Économique</div>
+        <div class="filter-option">Familial</div>
+        <div class="filter-option">Romantique</div>
+        <div class="filter-option">Animaux autorisés</div>
+      </div>
+    </section>
+      <p class="filters-results-text">Plus de 500 logements sont disponibles dans cette ville</p> 
 <!--Filters section>-->
 <!--<Hosts section-->
-            <section class="hosts">
+    <section class="hosts">
+      <div class="hosts-container">
+        <h2 class="hosts-title">Hébergements à Marseille</h2>
+        <div class="hosts-cards-row1">
+          <div class="hosts-card">
+            <img src="img/host/s/img_ho_s_1.jpg" alt="chambre1">
+            <div class="hosts-card-description">
+            <h3> Hôtel de la mer</h3>
+            <p>Nuit à partir de <strong>46€</strong></p>
+            <div class="icon-stars">*****</div>
+          </div>
+      </div>
+          <div class="hosts-card">2</div>
 
-                <div class="hostsContainer">
-                    <div class="hostsTitle">
-                    <h2>Hébergements à Marseille</h2>
-                    </div>
-                <div class="hostsCards">
-                    <div class="hostsCard">
-                            <img src="img/host/s/img_ho_s_1.jpg" alt="chambre1">
-                        <div class="hostsCardDescription">
-                            <p> Hôtel de la mer
-                            <br/>Nuit à partir de <strong> 46€</strong></p>
-                        </div>
+          <div class="hosts-card">3</div>
+        </div>
 
-                    </div>
-                    <div class="hostsCard">2</div>
-                    <div class="hostsCard">3</div>
-                    <div class="hostsCard">4</div>
-                    <div class="hostsCard">5</div>
-                    <div class="hostsCard">6</div>
-                </div>
-                   <p><a class="hostsViewMore" href="#">Afficher plus</a></p>
-                </div>
+        <div class="hosts-cards-row2">
+          <div class="hosts-card">4</div>
+          <div class="hosts-card">5</div>
+          <div class="hosts-card">6</div>
+        </div>
+      <p><a class="hosts-view-more" href="#">Afficher plus</a></p>
+      </div>
 
-
-                <aside class="hostsPopular">
-                <div class="hostsPopularTitle">
-                    <h2>Les plus populaires</h2>
-                    <div class="hostsPopularCard">1</div>
-                    <div class="hostsPopularCard">2</div>
-                    <div class="hostsPopularCard">3</div>
-
-                </div>
-                </aside>
-            </section>
+                            
+      <aside class="hostsPopular">
+        <div class="hostsPopularTitle">
+          <h2>Les plus populaires</h2>
+          <div class="hostsPopularCard">1</div>
+          <div class="hostsPopularCard">2</div>
+          <div class="hostsPopularCard">3</div>
+        </div>
+      </aside>
+    </section>
 <!--Hosts section>-->
 <!--<Activity section-->
-            <section class="activities">
-                <div class="activitiesTitle">
-                    <h2>Activités à Marseille</h2>
-                </div>
-                <div class="activitiesList">
-                    <div class="activitiesCardBig">1</div>
-                    <div class="activitiesCardMedium">2</div>
-                    <div class="activitiesCardSmall">3</div>
-                    <div class="activitiesCardBig">4</div>
-                    <div class="activitiesCardMedium">5</div>
-                    <div class="activitiesCardSmall">6</div>
-                </div>
-            </section>
+    <section class="activities">
+      <div class="activitiesTitle">
+        <h2>Activités à Marseille</h2>
+      </div>
+      <div class="activitiesList">
+        <div class="activitiesCardBig">1</div>
+        <div class="activitiesCardMedium">2</div>
+        <div class="activitiesCardSmall">3</div>
+        <div class="activitiesCardBig">4</div>
+        <div class="activitiesCardMedium">5</div>
+        <div class="activitiesCardSmall">6</div>
+      </div>
+    </section>
 <!--Activity section>-->
-        </main>
+  </main>
 <!--Main>-->
 <!--<Footer-->
-    <div class="footerContainer"></div>       
-<footer class="footer">
-
-            <div class="footerAbout">
-                <h3 class="footerTitle">A propos</h3>
-                <ul>
-                    <li><a href="#" class="footerLink">Fonctionnement du site</a></li>
-                    <li><a href="#" class="footerLink">Conditions générales de vente</a></li>
-                    <li><a href="#" class="footerLink">Données et confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="footerHosts">
-                <h3 class="footerTitle">Nos hébergements</h3>
-                <ul>
-                    <li><a href="#" class="footerLink">Charte qualité</a></li>
-                    <li><a href="#" class="footerLink">Soumettre votre hôtel</a></li>
-                </ul>
-            </div>
-            <div class="footerSupport">
-                <h3 class="footerTitle">Assistance</h3>
-                <ul>
-                    <li><a href="#" class="footerLink">Centre d'aide</a></li>
-                    <li><a href="#" class="footerLink">Nous contacter</a></li>
-                </ul>
-            </div>
-
-        </footer>
+  <footer class="footer">
+    <div class="footerAbout">
+      <h3 class="footerTitle">A propos</h3>
+      <ul>
+        <li><a href="#" class="footerLink">Fonctionnement du site</a></li>
+        <li><a href="#" class="footerLink">Conditions générales de vente</a></li>
+        <li><a href="#" class="footerLink">Données et confidentialité</a></li>
+      </ul>
     </div>
-<!--<Footer-->
-	</body>
+    <div class="footerHosts">
+    <h3 class="footerTitle">Nos hébergements</h3>
+      <ul>
+        <li><a href="#" class="footerLink">Charte qualité</a></li>
+        <li><a href="#" class="footerLink">Soumettre votre hôtel</a></li>
+      </ul>
+    </div>
+    <div class="footerSupport">
+      <h3 class="footerTitle">Assistance</h3>
+      <ul>
+        <li><a href="#" class="footerLink">Centre d'aide</a></li>
+        <li><a href="#" class="footerLink">Nous contacter</a></li>
+          </ul>
+    </div>
+  </footer>
+    <!--<Footer-->
+</body>
 </html>
