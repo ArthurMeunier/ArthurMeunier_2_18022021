@@ -1,5 +1,4 @@
 .main {
-    font-family: 'Raleway', sans-serif;
     background-color: #ffffff    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
     border-radius: 20px;
     background-color: white;
@@ -7,6 +6,7 @@
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
     max-width: 1440px;
     margin: auto;
 }
@@ -17,13 +17,22 @@ body {
     justify-content: space-between;
 }
 
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+}
+
 .nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .nav li {
     list-style-type: none;
-    margin: 1%;
+    margin: 10%;
 }
 
 .header-logo {
@@ -34,8 +43,9 @@ body {
 .filters {
     margin: 20px 0;
     display: flex;
+    flex-flow: wrap row;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 10px;
 }
 
@@ -43,16 +53,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .filter-option {
     border-radius: 10px;
-    margin: 1%;
+    margin: 5px ;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    border: 3px solid black;
+    align-content: center;
+    white-space: nowrap;
+    border: 1px solid black;
 }
 
 .hosts {
@@ -64,35 +77,25 @@ body {
 }
 
 .hosts-container {
-    background-color: #f2f2f2;
+    background-color: #f81515;
     border-radius: 14px;
     padding-left: 20px;
     width: 70%;
-    height: 626px;
+    height: auto;
     margin-right: 30px;
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap row; 
+    align-items: space-around;
  }
 
-
-.hosts-cards-row1 {
-    display: flex;
-    flex-flow: wrap row;
-    align-items: space-around;
-    justify-content: space-around;
-}
-
-.hosts-cards-row2 {
-  display: flex;
-  flex-flow: wrap row;
-  align-content: space-around;
-  justify-content: space-around;
+ .hosts-cards {
+  display:flex;
+  flex-flow: row wrap;
 }
 
 .hosts-card {
     flex: 1 1 30%;
     border: 4px solid red;
-    
     margin-right: 20px;
     height1: 199px;
     width1: 234px;
@@ -110,11 +113,11 @@ body {
     margin:5px;
 }
 
-.hostsPopular {
+.hosts-popular {
     background-color: #f2f2f2;
     border-radius: 14px;
     width: 30%;
-    height: 626px;
+    height: auto;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -122,11 +125,11 @@ body {
     border: red 4px solid;
 }
 
-.hostsPopularCard {
+.hosts-popular-card {
     flex: 1 1 100%;
     border: red 4px solid;
-    height1: 143px;
-    width1: 338px;
+    height: 120px;
+    width: 338px;
     background-color: blue;
     margin-bottom: 30px;
 }
@@ -138,43 +141,49 @@ body {
     object-fit: cover;
 }
 
-.activitiesTitle
-{
+.activities-title {
   display:flex;
 }
 
-.activitiesList {
+.activities-list {
     display:flex; 
     flex-direction: row;
+    justify-content: space-between;
+    border: yellow 4px solid;
 }
 
+.activities-column2 {
+    display: flex;
+    flex-flow: column wrap;
+    border: purple 4px solid;
+}
 
-.activitiesCardBig
-{
+.activities-column4 {
+    display: flex;
+    flex-flow: column wrap;
+    border: purple 4px solid;
+}
+
+.activities-card-big {
     border: red 4px solid;
-    height: 453px;
     width: 312px;
     background-color: blue;
-    margin-bottom: 30px;
-    align-items: center ;
 }
 
-.activitiesCardMedium {
+
+
+.activities-card-medium {
     border: red 4px solid;
     height: 242px;
     width: 300px;
     background-color: blue;
-    margin-bottom: 30px;
-    align-items: center ; 
 }
 
-.activitiesCardSmall {
+.activities-card-small {
     border: red 4px solid;
     height: 217px;
     width: 300px;
     background-color: blue;
-    margin-bottom: 30px;
-    align-items: center ;   
 }
 
 .footer {
