@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style/style.css">
   <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');</style>
   <link rel="icon" type="image/svg" href="img/logo/reservia.svg">
+  <script src="https://kit.fontawesome.com/635b13c360.js" crossorigin="anonymous"></script>
   </head>
 <!--Head>-->
 <!--<Body-->
@@ -41,13 +42,38 @@
     <section class="filters">
       <h2 class="filters-title">Filtres</h2>
       <div class="filters-list">
-        <div class="filter-option">Économique</div>
-        <div class="filter-option">Familial</div>
-        <div class="filter-option">Romantique</div>
-        <div class="filter-option">Animaux autorisés</div>
+        <div class="filter-option">
+          <div class="filter-icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <h3 class ="filter-title">Économique</h3>
+        </div>
+        <div class="filter-option">
+          <div class="filter-icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3 class ="filter-title">Familial</h3>
+        </div>
+        <div class="filter-option">
+          <div class="filter-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class ="filter-title">Romantique</h3>
+        </div>
+        <div class="filter-option">
+          <div class="filter-icon">
+            <i class="fas fa-dog"></i>
+          </div>
+          <h3 class ="filter-title">Animaux autorisés</h3>
+        </div>
       </div>
     </section>
-      <p class="filters-results-text">Plus de 500 logements sont disponibles dans cette ville</p> 
+      <div class="filters-results">
+        <div class="filters-results-icon">
+          <i class="fas fa-info"></i>
+        </div>
+        <p class="filters-results-text">Plus de 500 logements sont disponibles dans cette ville</p> 
+      </div>
 <!--Filters section>-->
 <!--<Hosts section-->
     <section class="hosts">
@@ -57,50 +83,50 @@
           <div class="hosts-card">
             <img src="img/host/s/img_ho_s_1.jpg" alt="chambre1">
             <div class="hosts-card-description">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <div class="icon-stars">*****</div>
+              <h3>Auberge la Cannebière</h3>
+              <p>Nuit à partir de <strong>25€</strong></p>
+              <div class="icon-stars">****</div>
             </div>
           </div>
           <div class="hosts-card">
             <img src="img/host/s/img_ho_s_2.jpg" alt="chambre1">
             <div class="hosts-card-description">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <div class="icon-stars">*****</div>
+              <h3>Hôtel du port</h3>
+              <p>Nuit à partir de <strong>52€</strong></p>
+              <div class="icon-stars">*****</div>
             </div>
           </div>
             
           <div class="hosts-card">
             <img src="img/host/s/img_ho_s_3.jpg" alt="chambre1">
             <div class="hosts-card-description">
-            <h3> Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <div class="icon-stars">*****</div>
+              <h3> Hôtel Les mouettes</h3>
+              <p>Nuit à partir de <strong>76€</strong></p>
+              <div class="icon-stars">****</div>
             </div>
           </div>
           
           <div class="hosts-card">
             <img src="img/host/s/img_ho_s_4.jpg" alt="chambre1">
             <div class="hosts-card-description">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <div class="icon-stars">*****</div>
+              <h3>Hôtel de la mer</h3>
+              <p>Nuit à partir de <strong>46€</strong></p>
+              <div class="icon-stars">***</div>
             </div>
           </div>
           <div class="hosts-card">
             <img src="img/host/s/img_ho_s_5.jpg" alt="chambre1">
             <div class="hosts-card-description">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
-            <div class="icon-stars">*****</div>
+              <h3>Auberge le Panier</h3>
+              <p>Nuit à partir de <strong>23€</strong></p>
+              <div class="icon-stars">****</div>
             </div>
           </div>
           <div class="hosts-card">
             <img src="img/host/s/img_ho_s_6.jpg" alt="chambre1">
             <div class="hosts-card-description">
-            <h3>Hôtel de la mer</h3>
-            <p>Nuit à partir de <strong>46€</strong></p>
+              <h3>Hôtel chez Amina</h3>
+              <p>Nuit à partir de <strong>96€</strong></p>
             <div class="icon-stars">*****</div>
             </div>
           </div>
@@ -109,33 +135,36 @@
       </div>
                             
       <aside class="hosts-popular">
-          <h2 class="hosts-popular-title">Les plus populaires</h2>
-          <div class ="hosts-popular-cards">
-            <div class="hosts-popular-card">
-              <img src="img/host/s/img_ho_s_1.jpg" alt="chambre1">
-              <div class="hosts-card-description">
-              <h3>Hôtel de la mer</h3>
+        <div class ="hosts-popular-title">
+          <h2 class="hosts-popular-h2">Les plus populaires</h2>
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class ="hosts-popular-cards">
+          <div class="hosts-popular-card">
+            <img src="img/host/s/img_ho_s_7.jpg" alt="chambre1">
+            <div class="hosts-popular-card-description">
+              <h3>Hôtel Le Soleil du  </h3>
               <p>Nuit à partir de <strong>46€</strong></p>
               <div class="icon-stars">*****</div>
-              </div>
-            </div>
-            <div class="hosts-popular-card">
-              <img src="img/host/s/img_ho_s_1.jpg" alt="chambre1">
-              <div class="hosts-card-description">
-              <h3>Hôtel de la mer</h3>
-              <p>Nuit à partir de <strong>46€</strong></p>
-              <div class="icon-stars">*****</div>
-              </div>
-            </div>
-            <div class="hosts-popular-card">
-              <img src="img/host/s/img_ho_s_1.jpg" alt="chambre1">
-              <div class="hosts-card-description">
-              <h3>Hôtel de la mer</h3>
-              <p>Nuit à partir de <strong>46€</strong></p>
-              <div class="icon-stars">*****</div>
-              </div>
             </div>
           </div>
+          <div class="hosts-popular-card">
+            <img src="img/host/s/img_ho_s_8.jpg" alt="chambre1">
+            <div class="hosts-popular-card-description">
+              <h3>Hôtel de la mer</h3>
+              <p>Nuit à partir de <strong>46€</strong></p>
+              <div class="icon-stars">*****</div>
+            </div>
+          </div>
+          <div class="hosts-popular-card">
+            <img src="img/host/s/img_ho_s_9.jpg" alt="chambre1">
+            <div class="hosts-popular-card-description">
+              <h3>Hôtel de la mer</h3>
+              <p>Nuit à partir de <strong>46€</strong></p>
+              <div class="icon-stars">*****</div>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
 <!--Hosts section>-->
