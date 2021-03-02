@@ -73,15 +73,17 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 .hosts-container {
-    background-color: #f81515;
+    background-color: #f2f2f2;;
     border-radius: 14px;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 70%;
-    height: auto;
+    height: 100%;
     margin-right: 30px;
     display: flex;
     flex-flow: wrap row; 
@@ -113,11 +115,18 @@ body {
     margin:5px;
 }
 
+.hosts-card img {
+  border-radius: 14px 14px 0px 0px;
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .hosts-popular {
     background-color: #f2f2f2;
     border-radius: 14px;
-    width: 30%;
-    height: auto;
+    width: auto;
+    height: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -125,21 +134,40 @@ body {
     border: red 4px solid;
 }
 
+/*
+.hosts-popular-container {
+  display: flex;
+  flex-flow: column wrap;
+  border: 4px yellow solid;
+  height: 100%;
+}
+*/
+
+.hosts-popular-cards {
+  display: flex;
+  flex-flow: column wrap;
+  border: 4px purple solid;
+}
+
+
 .hosts-popular-card {
     flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
     border: red 4px solid;
-    height: 120px;
+    height: auto;
     width: 338px;
     background-color: blue;
     margin-bottom: 30px;
 }
 
-.hosts-card img {
-    border-radius: 14px 14px 0px 0px;
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
+.hosts-popular-card img {
+  border-radius: 14px 14px 0px 0px;
+  height: 140px;
+  width: 40%;
+  object-fit: cover;
 }
+
 
 .activities-title {
   display:flex;
