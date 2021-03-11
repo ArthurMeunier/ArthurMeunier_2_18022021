@@ -5,6 +5,12 @@
   max-width: 1440px;
 }
 
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  }
+
 a:link {
 text-decoration: none;
 }
@@ -19,6 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 120px;
 }
 
 .nav {
@@ -30,7 +37,6 @@ body {
 
 .nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -39,9 +45,13 @@ body {
   margin: 10%;
 }
 
+.nav-signup-link a {
+  font-weight: bold;
+  color: #0065FC;
+}
+
 .header-logo {
   display: flex;
-  flex-direction: row;
 }
 
 .search {
@@ -71,6 +81,7 @@ white-space: pre;
 align-items: center;
 text-align: center;
 color: white;
+font-size: 0.85em;
 cursor: pointer;
 background-color: #0065FC ;
 box-sizing: border-box;
@@ -84,22 +95,27 @@ outline: none;
 .search-form-input:focus {
   border-color: #F2F2F2;
   outline: none;
+
 }
 
 .search-form-input {
   padding-left: 15px;
   border: 1.5px solid #F2F2F2;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: black;
+
 }
-
-
 
 input::-webkit-input-placeholder {
   font-weight: bold;
   color: black;
-  
+  font-size: 1.1em;  
 }
+
 input:focus::-webkit-input-placeholder {
   color: transparent;
+  
 }
 
 .icon-map-marker {
@@ -182,7 +198,6 @@ margin-right: 20px;
 
 .hosts {
 display: flex;
-flex-direction: row;
 justify-content: space-around;
 }
 
@@ -229,7 +244,7 @@ transform: scale(1.1);
 display: flex;
 flex-flow: column wrap;
 margin: 5px;
-justify-content: space-between;
+padding: 8px;
 
 }
 
@@ -238,20 +253,20 @@ justify-content: space-between;
   margin-bottom: 5px;
   }
 
-.hosts-card-description > .icon-stars {
+.hosts-popular-card-description > .icon-stars {
     margin: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     }
 
 .hosts-card-description > p {
 margin: 0px;
-margin-bottom: 5px;
+margin-bottom: 10px;
 } 
 
 
 .hosts-card img {
 border-radius: 14px 14px 0px 0px;
-height: 140px;
+height: 125px;
 width: 100%;
 object-fit: cover;
 }
@@ -293,22 +308,12 @@ padding-bottom: 25px;
 font-size: 25px;
 margin-left: 80px;
 }
-/*
-.hosts-popular-container {
-display: flex;
-flex-flow: column wrap;
-border: 4px yellow solid;
-height: 100%;
-}
-/*
-*/
 
 .hosts-popular-cards {
 display: flex;
 flex-flow: column wrap;
 justify-content: space-between;
 align-content: space-between;
-border: 4px solid greenNNN;
 margin-right: 40px;
 }
 
@@ -316,7 +321,6 @@ margin-right: 40px;
 .hosts-popular-card {
   flex: 1 1 25%;
   display: flex;
-  flex-flow: row wrap;
   height: 100%;
   width: 100%;
   background-color: white;
@@ -340,22 +344,21 @@ object-fit: cover;
 .hosts-popular-card-description {
 width: 50%;
 display: flex;
-flex-flow: column ;
-justify-content: space-around;
-align-items: space-around;
+flex-direction: column;
 padding-top: 5px;
 margin-left: 15px;
-}
-
-.hosts-popular-card-description > h3 {
-margin: 0px;
 margin-bottom: 5px;
 }
 
-.hosts-popular-card-description > p {
+.hosts-popular-card-description > h3 {
   margin: 0px;
   margin-bottom: 5px;
   }
+  
+  .hosts-popular-card-description > p {
+    margin: 0px;
+    margin-bottom: 5px;
+    }
 
 .hosts-popular-card-description-blank {
 height:60%;
@@ -379,79 +382,140 @@ font-size: 75%;
 
 .activities-title {
 display:flex;
+margin-top: 50px;
+margin-bottom: 20px;
 }
 
 .activities-list {
-  display:flex; 
-  flex-direction: row;
+  display:flex;
   justify-content: space-between;
-  border1: yellow 4px solid;
+  margin-bottom: 75px;
 }
 
 .activities-column2 {
   display: flex;
   flex-flow: column wrap;
-  border1: purple 4px solid;
+  justify-content: space-between;
+  width: 25%;
 }
 
 .activities-column4 {
   display: flex;
   flex-flow: column wrap;
-  border1: purple 4px solid;
+  justify-content: space-between;
+  width: 25%;
 }
 
 .activities-card-big {
-  border1: red 4px solid;
-  width: 312px;
-  background-color1: blue;
-  border1: purple 4px solid;
+  width: 23%;
+  background-color: white;
+  border: 4px #fafafa;
+  border-radius: 14px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
 }
 
 
 .activities-card-big img {
 border-radius: 14px 14px 0px 0px;
-height: 88%;
+height: 400px;
 width: 100%;
 object-fit: cover;
 }
 
-
-
-.activities-card-medium {
-  border1: red 4px solid;
-  height: 242px;
-  width: 300px;
-  background-color1: blue;
+.activities-card-medium-l {
+  background-color: white;
+  border: 4px #fafafa;
+  border-radius: 14px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
 }
 
-.activities-card-medium img {
+.activities-card-medium-l img {
 border-radius: 14px 14px 0px 0px;
-height: 140px;
+height: 190px;
 width: 100%;
 object-fit: cover;
 }
 
-.activities-card-small {
-  border1: red 4px solid;
-  height: 217px;
-  width: 300px;
-  background-color1: blue;
+.activities-card-small-s {
+  background-color: white;
+  border: 4px #fafafa;
+  border-radius: 14px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
 }
 
-.activities-card-small img {
+.activities-card-small-s img {
 border-radius: 14px 14px 0px 0px;
-height: 140px;
+height: 130px;
 width: 100%;
 object-fit: cover;
 }
+
+.activities-column4 {
+  display: flex;
+  flex-flow: column wrap ;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.activities-card-medium-s {
+  background-color: white;
+  border: 4px #fafafa;
+  border-radius: 14px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.activities-card-medium-s img {
+border-radius: 14px 14px 0px 0px;
+height: 150px;
+width: 100%;
+object-fit: cover;
+}
+
+.activities-card-small-l {
+  background-color: white;
+  border: 4px #fafafa;
+  border-radius: 14px;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.activities-card-small-l img {
+border-radius: 14px 14px 0px 0px;
+height: 170px;
+width: 100%;
+object-fit: cover;
+}
+
+.activities-card-description {
+  margin: 5px;
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 1em;
+  }
 
 .footer {
   background-color: #f2f2f2;
-  max-width: 1440px;
   margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
+.footer-title {
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
 
+.footer li {
+  list-style-type: none;
+  padding-bottom: 8px;
+}
+.footer li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-about {
+
+}
