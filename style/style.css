@@ -2,7 +2,6 @@
 
 .main {
   background-color: #ffffff;
-  border-radius : 20px;
   background-color: white;
   max-width: 1440px;
 }
@@ -125,6 +124,16 @@ input::-webkit-input-placeholder {
   font-size: 18px;
   font-weight: 800;
 }
+
+input[placeholder]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+  }
+
+input[placeholder]::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+  }
 
 input:focus::-webkit-input-placeholder {
   color: transparent;
@@ -345,8 +354,8 @@ input:focus::-webkit-input-placeholder {
 }
 
 .hosts-popular-card {
-  flex: 1 1 25%;
   display: flex;
+  flex: 1 1 10%;
   height: 100%;
   width: 100%;
   background-color: white;
