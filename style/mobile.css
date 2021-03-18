@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+
 .body {
   margin: auto;
   background-color: #ffffff;
@@ -37,17 +43,53 @@
 
 .hosts-container {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
 }
 
 .hosts {
   display: flex;
   flex-flow: column-reverse wrap;
   align-items: center;
+  width: auto;
+}
+
+.hosts-title {
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .hosts-cards {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hosts-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.hosts-card img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hosts-card-description > p {
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 .hosts-popular {
@@ -56,17 +98,42 @@
   flex-flow: column wrap;
   border-radius: 0px;
   width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hosts-popular-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hosts-popular-cards {
   display: flex;
-  flex: 1 1 30%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
+}
+
+
+.hosts-popular-card {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .activities {
   max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
 }
 
+.activities-title {
+margin-bottom: 0px;
+}
 
 .activities-list {
   display: flex;
@@ -86,11 +153,10 @@
 }
 
 .activities-card {
-  flex: 1 1 30%;
   cursor: pointer;
   border-radius: 22px;
   box-shadow: 0px 3px 10px 3px rgb(40 40 40 / 15%);
-  width: 350px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -120,9 +186,17 @@
   height: auto;
   margin: 0;
   white-space: nowrap;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-title {
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .footer-infos {
   margin-left: 30px;
   margin-bottom: 15px;
-}
+} 
