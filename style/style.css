@@ -153,6 +153,8 @@ input:focus::-webkit-input-placeholder {
 
 .filters {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .filters-title {
