@@ -4,6 +4,8 @@
   background-color: #ffffff;
   background-color: white;
   max-width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 * {
@@ -29,6 +31,8 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* ### HEADER - NAV ### */
@@ -176,6 +180,7 @@ input:focus::-webkit-input-placeholder {
 
 .filters-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -489,8 +494,8 @@ input:focus::-webkit-input-placeholder {
   height: 130px;
   background-color: #f2f2f2;
   display: flex;
-  margin-left: -40px;
-  margin-right: -40px;
+  margi1-left: -40px;
+  margi1n-right: -40px;
   padding: 40px;
 }
 
