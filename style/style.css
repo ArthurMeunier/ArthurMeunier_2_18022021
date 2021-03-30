@@ -89,6 +89,7 @@ body {
 }
 
 .search-button {
+  display: flex;
   appearance: auto;
   user-select: none;
   white-space: pre;
@@ -104,6 +105,11 @@ body {
   border-radius: 0px 14px 14px 0px ;
   font-weight: bold;
   outline: none;
+}
+
+
+.fa-search:before {
+    display: none;
 }
 
 .search-form-input:focus {

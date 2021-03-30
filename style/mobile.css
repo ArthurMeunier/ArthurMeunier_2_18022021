@@ -4,6 +4,11 @@
   border: 0;
   }
 
+  .main {
+    padding-left: 0px;
+  }
+  
+/*
 .bodazeazeazey {
   margin: auto;
   background-color: #ffffff;
@@ -14,6 +19,7 @@
   align-items: center;
   align-content: center;
 }
+*/
 
 body {
   margin: auto;
@@ -27,18 +33,17 @@ html {
 .header {
   display: flex;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .search {
   display: flex;
-  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .search-form {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .search-form-input {
@@ -52,10 +57,24 @@ html {
   width: 50%;
 }
 
+.search-button-text {
+  display: none;
+}
+
+.fa-search:before {
+  display: block;
+}
+
+
 .search.title {
   display: flex;
   align-items: center;
   margin: 100px;
+}
+
+.search-subtitle {
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
 .filters {
@@ -100,7 +119,6 @@ html {
 .hosts {
   display: flex;
   flex-flow: column-reverse wrap;
-  align-items: center;
   width: auto;
 }
 
@@ -108,20 +126,23 @@ html {
   margin: 0;
   padding-bottom: 25px;
   padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hosts-cards {
   display: flex;
   flex-flow: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hosts-card {
   display: flex;
   flex-direction: column;
   margin: 0;
-  width: auto;
   margin-bottom: 25px;
 }
 
@@ -144,6 +165,7 @@ html {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  order: 0;
 }
 
 .hosts-popular-title {
@@ -157,6 +179,7 @@ html {
   align-items: center;
   justify-content: center;
   margin-right: 0px;
+  
 }
 
 
@@ -165,6 +188,10 @@ html {
   margin-bottom: 25px;
 }
 
+.hosts-view-more {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .activities {
   max-width: 480px;
   display: flex;
@@ -173,6 +200,7 @@ html {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
+  width: 100%;
 }
 
 .activities-title {
@@ -241,6 +269,6 @@ margin-bottom: 0px;
 }
 
 .footer-infos {
-  margin-left: 30px;
+  padding-left: 20px;
   margin-bottom: 15px;
 } 
