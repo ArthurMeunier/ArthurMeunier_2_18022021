@@ -6,16 +6,16 @@
 
   .main {
     padding-left: 0px;
+    padding-right: 0px;
   }
 
 body {
   margin: auto;
   max-width: 480px;
+  overflow-x: hidden;
 }
 
-html {
-  width: 100%;
-}
+
 
 .header-logo-mobile {
   padding-left: 20px;
@@ -88,7 +88,6 @@ html {
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
 }
 
 .search-form-input {
@@ -159,12 +158,12 @@ input::placeholder {
   align-items: flex-start;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
 }
 
 .filters-title {
   margin-bottom: 15px;
   white-space: nowrap;
+  margin-right: 0;
 }
 
 .filters-list {
@@ -177,8 +176,15 @@ input::placeholder {
   margin-bottom: 10px;
 }
 
+.filter-option:hover {
+  transform: none;
+  transition: none;
+  background-color: #FFF;
+}
+
 .filter-title {
-  font-size: 14px;
+  font-size: 15px;
+  padding-right: 13px;
 }
 
 .filters-results {
@@ -248,11 +254,12 @@ input::placeholder {
   display: flex;
   flex-flow: column wrap;
   border-radius: 0px;
-  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  order: 0;
+  width: auto;
 }
+
+
 
 .hosts-popular-title {
   display: flex;
@@ -275,7 +282,7 @@ input::placeholder {
 
 
 .hosts-popular-card {
-  width: 100%;
+  width: auto;
   margin-bottom: 25px;
 }
 
@@ -296,7 +303,6 @@ input::placeholder {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
-  width: 100%;
 }
 
 .activities-title {
