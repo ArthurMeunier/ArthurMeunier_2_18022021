@@ -37,9 +37,12 @@ body {
 
 /* ### HEADER - NAV ### */
 
+.header-mobile {
+  display:none;
+}
+
 .nav-link, .nav-signup-link {
   font-weight: 500;
-
   color: #0065fc;
 }
 
@@ -500,8 +503,6 @@ input:focus::placeholder {
   height: 130px;
   background-color: #f2f2f2;
   display: flex;
-  margi1-left: -40px;
-  margi1n-right: -40px;
   padding: 40px;
 }
 
