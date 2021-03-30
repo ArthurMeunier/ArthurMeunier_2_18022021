@@ -127,7 +127,7 @@ body {
   font-weight: 800;
 }
 
-input::-webkit-input-placeholder {
+input::placeholder {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
@@ -145,7 +145,7 @@ input[placeholder]::-moz-placeholder { /* Mozilla Firefox 19+ */
   opacity: 1;
   }
 
-input:focus::-webkit-input-placeholder {
+input:focus::placeholder {
   color: transparent;
 }
 

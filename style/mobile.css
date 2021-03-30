@@ -52,9 +52,17 @@ html {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   width: 50%;
+}
+
+input::placeholder {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .search-button-text {
@@ -144,6 +152,12 @@ html {
   flex-direction: column;
   margin: 0;
   margin-bottom: 25px;
+  width: 100%;
+}
+
+.hosts-card:hover{
+  transform: none;
+  transition: none;
 }
 
 .hosts-card img {
@@ -171,6 +185,11 @@ html {
 .hosts-popular-title {
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
+}
+
+.fa-chart-line {
+  margin-left: 0px;
 }
 
 .hosts-popular-cards {
@@ -184,8 +203,13 @@ html {
 
 
 .hosts-popular-card {
-  width: auto;
+  width: 100%;
   margin-bottom: 25px;
+}
+
+.hosts-popular-card:hover {
+  transform: none;
+  transition: none;
 }
 
 .hosts-view-more {
@@ -211,7 +235,6 @@ margin-bottom: 0px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -230,6 +253,11 @@ margin-bottom: 0px;
   box-shadow: 0px 3px 10px 3px rgb(40 40 40 / 15%);
   width: 100%;
   margin-bottom: 30px;
+}
+
+.activities-card:hover {
+  transform: none;
+  transition: none;
 }
 
 .activities-card.big img {
