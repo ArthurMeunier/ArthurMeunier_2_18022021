@@ -174,6 +174,7 @@ input:focus::placeholder {
   margin-right: 22px;
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .filter-title {
@@ -199,6 +200,7 @@ input:focus::placeholder {
   border: 2px solid #d9d9d9;
   border-radius: 50px;
   margin-right: 25px;
+  margin-bottom: 10px;
   text-align: center;
   cursor: pointer;
   transform: scale(1);
@@ -346,8 +348,8 @@ input:focus::placeholder {
 
 .hosts-popular-title {
   display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 40px;
 }
 
 .hosts-popular-h2 {
@@ -357,7 +359,6 @@ input:focus::placeholder {
 
 .fa-chart-line {
   font-size: 25px;
-  margin-left: 100px;
 }
 
 .hosts-popular-cards {
@@ -464,6 +465,10 @@ input:focus::placeholder {
 
 .activities-card-description {
   margin: 1em;
+}
+
+.activities-card.big {
+  height: 100%;
 }
 
 .activities-card img {

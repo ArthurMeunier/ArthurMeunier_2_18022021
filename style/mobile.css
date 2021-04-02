@@ -264,7 +264,8 @@ input::placeholder {
 .hosts-popular-title {
   display: flex;
   justify-content: space-between;
-  white-space: nowrap;
+  white-spaqsdce: nowrap;
+  margin: 0;
 }
 
 .fa-chart-line {
