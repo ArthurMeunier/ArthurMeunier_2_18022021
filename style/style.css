@@ -41,6 +41,7 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .header-logo-box {
@@ -262,7 +263,7 @@ input:focus::placeholder {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filters-results-icon {
@@ -424,7 +425,7 @@ input:focus::placeholder {
 
 .hosts-popular-card img {
   border-radius: 14px 0px 0px 14px;
-  height: 140px;
+  height: auto;
   width: 35%;
   object-fit: cover;
 }
@@ -436,7 +437,10 @@ input:focus::placeholder {
   padding-top: 5px;
   margin-left: 15px;
   margin-bottom: 5px;
+  color: black;
 }
+
+
 
 .hosts-popular-card-description > h3 {
   margin: 0px;
@@ -448,9 +452,10 @@ input:focus::placeholder {
   margin-bottom: 5px;
 }
 
-.hosts-popular-card-description-blank {
-  height: 60%;
-  width: 100%;
+.hosts-popular-card-description > .icon-stars {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-top: 25%;
 }
 
 .icon-stars {
