@@ -6,7 +6,9 @@
 	<title>Reservia</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" media="screen and (max-width: 480px)" href="style/mobile.css"/>
+  <link rel="stylesheet" media="screen and (min-width:1px) and (max-width: 480px)" href="style/mobile.css"/>
+  <link rel="stylesheet" media="screen and (min-width:481px) and (max-width: 768px)" href="style/tabletP.css"/>
+  <link rel="stylesheet" media="screen and (min-width:769px) and (max-width: 1024px)" href="style/tabletL.css"/>
   <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');</style>
   <link rel="icon" type="image/svg" href="img/logo/reservia.svg">
   <script src="https://kit.fontawesome.com/635b13c360.js" crossorigin="anonymous"></script>
@@ -16,25 +18,19 @@
 <body>
 <!--<Header-->
   <header class="header">
-    <a href="index.html"><img class="header-logo" src="img/logo/reservia.svg" alt="Reservia"></a>
-    <nav class="nav">
-      <a href="#hosts" class="nav-link linkhosts">Hébergements</a>
-      <a href="#activities" class="nav-link linkactivities">Activités</a>
-      <a href="#" class="nav-signup-link">S'inscrire</a>
-    </nav>
-  </header>
-  <div class="header-mobile">
-    <div class ="header-mobile-top">
-      <a href="index.html"><img class="header-logo-mobile" src="img/logo/reservia.svg" alt="Reservia"></a>
-      <a href="#" class="nav-signup-mobile-link">S'inscrire</a>
-    </div>
-    <div class="header-mobile-bot">
-      <nav class="nav-mobile">
-        <a href="#hosts" class="nav-link-mobile linkhosts">Hébergements</a>
-        <a href="#activities" class="nav-link-mobile linkactivities">Activités</a>
+    <nav class ="header-container">
+      <div class="header-logo-box">
+        <a href="index.html"><img class="header-logo" src="img/logo/reservia.svg" alt="Reservia"></a>
+      </div>
+      <div class ="nav-links">
+        <div class="nav-link-hosts"><a href="#hosts" >Hébergements</a></div>
+        <div class="nav-link-activities"><a href="#activities">Activités</a></div>
+      </div>
+        <div class="nav-link-signup">
+          <a href="#">S'inscrire</a>
+        </div>
       </nav>
-    </div>
-  </div>
+  </header>
 <!--Header>-->
 <!--<Main-->
   <main class="main">
@@ -186,7 +182,7 @@
           <i class="fas fa-chart-line"></i>
         </div>
         <div class ="hosts-popular-cards">
-          <div class="hosts-popular-card">
+          <a class="hosts-popular-card" href="#">
             <img src="img/host/s/img_ho_s_7.jpg" alt="host-pop-img-1">
             <div class="hosts-popular-card-description">
               <h3>Hôtel Le Soleil du matin</h3>
@@ -200,7 +196,7 @@
                 <span class="icon-star-on"><i class="fas fa-star"></i></span>
               </div>
             </div>
-          </div>
+          </a>
           <div class="hosts-popular-card">
             <img src="img/host/s/img_ho_s_8.jpg" alt="host-pop-img-2">
             <div class="hosts-popular-card-description">
