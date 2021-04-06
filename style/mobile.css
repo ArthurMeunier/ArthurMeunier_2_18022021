@@ -7,81 +7,80 @@
   .main {
     padding-left: 0px;
     padding-right: 0px;
+    max-width: 480px;
   }
 
 body {
   margin: auto;
-  max-width: 480px;
   overflow-x: hidden;
 }
 
-
-
-.header-logo-mobile {
-  padding-left: 20px;
-}
-
-.nav-signup-mobile-link {
-  padding-right: 20px;
-  font-weight: bolder;
-  font-size: 16px;
-  color: #0065fc;
-}
-
-.header-mobile {
+.header {
+  max-width: 480px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
-.header-mobile-top {
+.header-container {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 480px;
-  margin-bottom: 15px;
-  padding-top: 20px;
 }
 
-.header-mobile-bot {
-  width: 100%;
-}
-
-.nav a {
-  padding: 0;
-  width: 50%;
-  text-align: center;
-}
-
-.linkhosts {
-  padding-top: 0;
-  border-top:none;
-  border-bottom: 2px solid #0065FC;
-  color: #0065FC;
-}
-
-.linkactivities {
-  border-bottom: 2px solid #F2F2F2;
-}
-
-.nav-mobile {
+.nav-link-signup {
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
+  order: -1;
+  justify-content: center;
+  padding: 0;
+  margin-right: 20px;
 }
 
-.nav-mobile a {
-  width: 50%;
+.nav-link-signup a {
+  font-weight: bolder;
+  color: #0065fc;
+}
+
+.header-logo-box {
+  order:-1;
+  margin-left: 20px;
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
-  padding-bottom: 10px;
+  padding-top: 20px;
   font-weight: 500;
 }
 
-.header {
-  display: none;
+
+.nav-link-hosts {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #0065FC;
+  padding-bottom: 10px;
+}
+
+.nav-link-hosts a {
+  color: #0065fc;
+}
+
+.nav-link-activities {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #F2F2F2;
+  padding-bottom: 10px;
+}
+
+.nav-link-activities a {
+  color: black;
 }
 
 .search {
@@ -264,7 +263,6 @@ input::placeholder {
 .hosts-popular-title {
   display: flex;
   justify-content: space-between;
-  white-spaqsdce: nowrap;
   margin: 0;
 }
 
@@ -295,7 +293,6 @@ input::placeholder {
   padding-right: 20px;
 }
 .activities {
-  max-width: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,10 +359,11 @@ margin-bottom: 0px;
   flex-direction: column;
   height: auto;
   margin: 0;
-  white-space: nowrap;
+  white-space: none ;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 480px;
 }
 
 .footer-title {
@@ -376,4 +374,5 @@ margin-bottom: 0px;
 .footer-infos {
   padding-left: 20px;
   margin-bottom: 15px;
+  width: auto;
 } 

@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  }
+
+.main {
+  max-width: 768px;
+}
+
+.header {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 768px;
+}
+
+.header-logo-box {
+  width: auto;
+}
+
+
+.nav-link-signup a {
+  padding-right:0px;
+}
+
+.nav-link-hosts a {
+  padding-right:0px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-title {
+  font-size: 9px;
+}
+
+
+.hosts {
+  display: flex;
+  flex-direction: column;
+}
+
+.hosts-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.hosts-cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.hosts-card {
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+
+
+.hosts-card-description {
+  margin: 5px;
+  padding-bottom: 5px;
+}
+
+.hosts-popular {
+  background-color: white;
+  width: auto;
+  padding :0;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.hosts-popular-cards {
+  display: flex;
+  justify-content: center;
+  margin-right: 0px;
+  margin-bottom: 25px;
+}
+
+.hosts-popular-card {
+  width: auto;
+  margin-bottom: 25px;
+}
+
+.hosts-popular-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  height: 60px;
+}
+
+.hosts-popular-h2 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 0;
+}
+
+.activities-title {
+  margin-top: 0px;
+}
+.activities-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.activities-card img {
+  width: 100%;
+  height: 110px;
+}
+
+.activities-card.big img {
+  height: 150px;
+}
+
+.activities-card.medium-l img {
+  height: 150px;
+}
+
+.activities-card.small-s img {
+  height: 150px;
+}
+
+.activities-card.medium-s img {
+  height: 150px;
+}
+
+.activities-card.small-l img {
+  height: 150px;
+}
+
+.activities-column {
+  width: auto;
+
+}
+
+.footer {
+  max-width: 768px;
+  height: auto;
+  justify-content: space-between;
+}
+
+.footer-infos {
+  width: 25%;
+}
+
+
+.filter-option:hover {
+  transform: none;
+  transition: none;
+  background-color: #FFF;
+}
+
+.hosts-card:hover{
+  transform: none;
+  transition: none;
+}
+
+.hosts-popular-card:hover {
+  transform: none;
+  transition: none;
+}
+
+.activities-card:hover {
+  transform: none;
+  transition: none;
+}
