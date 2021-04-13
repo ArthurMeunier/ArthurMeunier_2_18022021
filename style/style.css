@@ -560,7 +560,3 @@ input:focus::placeholder {
 .footer-infos {
   width: 33%;
 }
-
-.small-screen {
-  display: none;
-}
