@@ -1,9 +1,61 @@
+/* ### TABLET PORTRAIT CSS | WIDTH: 768PX TO 1024PX ### */
+/* ### MAIN ### */
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  }
+}
 
-  * {
-    display:none;
-  }
+/* ### HEADER ### */
+
+.header {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 768px;
+}
+  
+.header-logo-box {
+  width: auto;
+}
+
+/* ### HEADER - NAV ### */
+
+.nav-link-signup a {
+  padding-right: 0px;
+}
+  
+.nav-link-hosts a {
+  padding-right: 0px;
+  border-top: none;
+  padding-top: 0;
+}
+
+/* ### FILTERS ### */
+
+.filter-title {
+  font-size: initial;
+}
+
+/* ### NO-HOVER ### */
+
+.filter-option:hover {
+  transform: none;
+  transition: none;
+  background-color: #FFF;
+}
+
+.hosts-card:hover{
+  transform: none;
+  transition: none;
+}
+
+.hosts-popular-card:hover {
+  transform: none;
+  transition: none;
+}
+
+.activities-card:hover {
+  transform: none;
+  transition: none;
+}

@@ -1,3 +1,4 @@
+/* ### DESKTOP CSS | WIDTH: 1025PX AND MORE ### */
 /* ### MAIN ### */
 
 .main {
@@ -12,10 +13,10 @@
   margin: 0;
   padding: 0;
   border: 0;
-  }
+}
 
 a:link {
-text-decoration: none;
+  text-decoration: none;
 }
 
 body {
@@ -30,7 +31,7 @@ body {
   max-width: 1440px;
   padding-left: 40px;
   padding-right: 40px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -47,6 +48,9 @@ body {
 .header-logo-box {
   width: 60%;
 }
+
+
+/* ### HEADER - NAV ### */
 
 .nav {
   display: flex;
@@ -65,17 +69,17 @@ body {
   font-weight: 500;
 }
 
-
 .nav-links a:hover {
   border-top: 2px solid #0065fc;
   padding-top: 48px;
 }
 
-
 .nav-link-hosts a {
   padding-left: 20px;
   padding-right: 20px;
   color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 48px;
 }
 
 .nav-link-activities a{
@@ -84,14 +88,10 @@ body {
   color: black;
 }
 
-.nav-link-signup {
-
-}
-
 .nav-link-signup a {
   padding-left: 20px;
   padding-right: 20px;
-  font-weight:bolder;
+  font-weight: bolder;
   color: #0065fc;
 }
 
@@ -99,10 +99,6 @@ body {
   border-top: 2px solid #0065fc;
   padding-top: 48px;
 }
-
-/* ### HEADER - NAV ### */
-
-
 
 /* ### SEARCH ### */
 
@@ -144,9 +140,8 @@ body {
   outline: none;
 }
 
-
 .fa-search:before {
-    display: none;
+  display: none;
 }
 
 .search-form-input:focus {
@@ -175,12 +170,12 @@ input::placeholder {
 input[placeholder]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color: black;
   opacity: 1;
-  }
+}
 
 input[placeholder]::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: black;
   opacity: 1;
-  }
+}
 
 input:focus::placeholder {
   color: transparent;
@@ -320,13 +315,13 @@ input:focus::placeholder {
   cursor: pointer;
   transform: scale(1);
   transition: 0.3s;
+  color: black;
 }
 
 .hosts-card:hover{
   transform: scale(1.1);
   transition: 0.3s;
 }
-
 
 .hosts-card-description {
   display: flex;
@@ -440,8 +435,6 @@ input:focus::placeholder {
   color: black;
 }
 
-
-
 .hosts-popular-card-description > h3 {
   margin: 0px;
   margin-bottom: 5px;
@@ -499,6 +492,7 @@ input:focus::placeholder {
   box-shadow: 0px 3px 10px 3px rgb(40 40 40 / 15%);
   transform: scale(1);
   transition: 0.3s;
+  color: black;
 }
 
 .activities-card-description {
@@ -565,4 +559,8 @@ input:focus::placeholder {
 
 .footer-infos {
   width: 33%;
+}
+
+.small-screen {
+  display: none;
 }

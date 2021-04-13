@@ -1,19 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  }
+/* ### MOBILE CSS | WIDTH: 480PX AND LESS ### */
+/* ### MAIN ### */
 
-  .main {
-    padding-left: 0px;
-    padding-right: 0px;
-    max-width: 480px;
-  }
+
+.main {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 480px;
+}
 
 body {
   margin: auto;
   overflow-x: hidden;
 }
+
+/* ### HEADER ### */
 
 .header {
   max-width: 480px;
@@ -31,6 +31,8 @@ body {
   width: 100%;
 }
 
+/* ### HEADER - NAV ### */
+
 .nav-link-signup {
   display: flex;
   order: -1;
@@ -40,6 +42,7 @@ body {
 }
 
 .nav-link-signup a {
+  padding: 0;
   font-weight: bolder;
   color: #0065fc;
 }
@@ -58,17 +61,19 @@ body {
   font-weight: 500;
 }
 
-
 .nav-link-hosts {
   width: 50%;
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #0065FC;
   padding-bottom: 10px;
+  border-top: none;
 }
 
 .nav-link-hosts a {
   color: #0065fc;
+  border-top: none;
+  padding-top: 0;
 }
 
 .nav-link-activities {
@@ -82,6 +87,8 @@ body {
 .nav-link-activities a {
   color: black;
 }
+
+/* ### SEARCH ### */
 
 .search {
   display: flex;
@@ -151,6 +158,8 @@ input::placeholder {
   margin-bottom: 35px;
 }
 
+/* ### FILTERS ### */
+
 .filters {
   display: flex;
   flex-flow: column;
@@ -175,12 +184,6 @@ input::placeholder {
   margin-bottom: 10px;
 }
 
-.filter-option:hover {
-  transform: none;
-  transition: none;
-  background-color: #FFF;
-}
-
 .filter-title {
   font-size: 15px;
   padding-right: 13px;
@@ -200,6 +203,8 @@ input::placeholder {
   padding: 0;
   width: auto;
 }
+
+/* ### HOSTS ### */
 
 .hosts {
   display: flex;
@@ -232,11 +237,6 @@ input::placeholder {
   width: 100%;
 }
 
-.hosts-card:hover{
-  transform: none;
-  transition: none;
-}
-
 .hosts-card img {
   height: 140px;
   width: 100%;
@@ -248,6 +248,8 @@ input::placeholder {
   margin-bottom: 5px;
 }
 
+/* ### HOSTS - POPULAR ### */
+
 .hosts-popular {
   flex: 1 1 100%;
   display: flex;
@@ -257,8 +259,6 @@ input::placeholder {
   padding-right: 20px;
   width: auto;
 }
-
-
 
 .hosts-popular-title {
   display: flex;
@@ -277,21 +277,18 @@ input::placeholder {
   margin-right: 0px;
 }
 
-
 .hosts-popular-card {
   width: auto;
   margin-bottom: 25px;
-}
-
-.hosts-popular-card:hover {
-  transform: none;
-  transition: none;
 }
 
 .hosts-view-more {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/* ### ACTIVITIES ### */
+
 .activities {
   display: flex;
   flex-direction: column;
@@ -302,7 +299,7 @@ input::placeholder {
 }
 
 .activities-title {
-margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .activities-list {
@@ -329,11 +326,6 @@ margin-bottom: 0px;
   margin-bottom: 30px;
 }
 
-.activities-card:hover {
-  transform: none;
-  transition: none;
-}
-
 .activities-card.big img {
   height: 150px;
 }
@@ -353,6 +345,8 @@ margin-bottom: 0px;
 .activities-card.small-l img {
   height: 150px;
 }
+
+/* ### FOOTER ### */
 
 .footer {
   display: flex;
@@ -376,3 +370,26 @@ margin-bottom: 0px;
   margin-bottom: 15px;
   width: auto;
 } 
+
+/* ### NO-HOVER ### */
+
+.filter-option:hover {
+  transform: none;
+  transition: none;
+  background-color: #FFF;
+}
+
+.hosts-card:hover{
+  transform: none;
+  transition: none;
+}
+
+.hosts-popular-card:hover {
+  transform: none;
+  transition: none;
+}
+
+.activities-card:hover {
+  transform: none;
+  transition: none;
+}

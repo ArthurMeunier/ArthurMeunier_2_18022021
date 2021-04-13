@@ -1,12 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  }
+/* ### TABLET PORTRAIT CSS | WIDTH: 481PX TO 768PX ### */
+/* ### MAIN ### */
 
 .main {
   max-width: 768px;
 }
+
+/* ### HEADER ### */
 
 .header {
   padding-left: 40px;
@@ -18,6 +17,7 @@
   width: auto;
 }
 
+/* ### HEADER - NAV ### */
 
 .nav-link-signup a {
   padding-right:0px;
@@ -25,7 +25,11 @@
 
 .nav-link-hosts a {
   padding-right:0px;
+  border-top: none;
+  padding-top: 0;
 }
+
+/* ### FILTERS ### */
 
 .filters {
   display: flex;
@@ -34,9 +38,10 @@
 }
 
 .filter-title {
-  font-size: 9px;
+  font-size: initial;
 }
 
+/* ### HOSTS ### */
 
 .hosts {
   display: flex;
@@ -70,6 +75,8 @@
   padding-bottom: 5px;
 }
 
+/* ### HOSTS - POPULAR ### */
+
 .hosts-popular {
   background-color: white;
   width: auto;
@@ -97,17 +104,21 @@
   margin-right: 0;
   background-color: #f2f2f2;
   border-radius: 15px;
-  border: 1px solid #0065fc;
+  box-shadow: 1px 2px 7px 1px rgb(40 40 40 / 40%);
   margin-bottom: 25px;
-  height: 60px;
-  
+  height: 60px; 
 }
 
 .hosts-popular-h2 {
-  margin: 0;
+  margin-left: 15px;
   padding: 0;
 }
 
+.fa-chart-line {
+  margin-right: 15px;
+}
+
+/* ### ACTIVITIES ### */
 
 .activities {
   display: flex;
@@ -121,6 +132,7 @@
 .activities-title {
   margin-top: 0px;
 }
+
 .activities-list {
   display: flex;
   flex-direction: column;
@@ -162,6 +174,8 @@
 
 }
 
+/* ### FOOTER ### */
+
 .footer {
   max-width: 768px;
   height: auto;
@@ -172,6 +186,7 @@
   width: 25%;
 }
 
+/* ### NO-HOVER ### */
 
 .filter-option:hover {
   transform: none;
