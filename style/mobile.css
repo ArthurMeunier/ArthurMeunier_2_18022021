@@ -353,7 +353,7 @@ input::placeholder {
   flex-direction: column;
   height: auto;
   margin: 0;
-  white-space: none ;
+  white-space: normal;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -372,6 +372,11 @@ input::placeholder {
 } 
 
 /* ### NO-HOVER ### */
+
+.nav-links a:hover {
+  border-top: 0;
+  padding-top: 0;
+}
 
 .filter-option:hover {
   transform: none;
